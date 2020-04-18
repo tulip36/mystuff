@@ -6,6 +6,7 @@ export default 和 export 区别：
 3.在一个文件或模块中，export、import可以有多个，export default仅有一个
 4.通过export方式导出，在导入时要加{ }，export default则不需要
 
+```
 1.export
 //a.js
 export const str = "blablabla~";
@@ -16,7 +17,9 @@ export function log(sth) {
 
 //b.js
 import { str, log } from 'a'; //也可以分开写两次，导入的时候带花括号
+```
 
+```
 2.export default
 //a.js
 const str = "blablabla~";
@@ -36,3 +39,4 @@ export default sex（sex不能加大括号）
 import any from "./a.js"
 import any12 from "./a.js" 
 console.log(any,any12)   // boy,boy
+```
